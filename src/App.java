@@ -1,16 +1,14 @@
-import java.util.Collection;
-
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        Collection<String> coleçãoOrdenada = CollectionFactorySingleton.getInstance().createCollection(CollType.TAMANHO_CONHECIDO_ORDENADO);
 
+        Conta conta1 = Conta.builder(123456L, "João")
+        .saldoLivreInicial(1000)
+        .saldoAplicacaoInicial(5000)
+        .taxaRemuneracao(0.05)
+        .taxaSaldoNegativo(0.1)
+        .categoriaInicial(Categoria.NORMAL)
+        .build();
 
-        coleçãoOrdenada.add("banana");
-        coleçãoOrdenada.add("morango");
-        coleçãoOrdenada.add("maça");
-        for(String s : coleçãoOrdenada){
-            System.out.println(s);
-        }
+        System.out.println(conta1);
     }
 }
