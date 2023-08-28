@@ -1,0 +1,7 @@
+﻿Gabriel Reis, João Pedro Beltrand, Luca Mello                                 28 de Agosto de 2023
+
+
+Padrões de projeto propostos para a atividade de padrões de criação.
+
+
+Nos exercícios 2 e 3 o padrão de criação proposto eram os mais adequados, pois removiam do usuário a necessidade de conhecer o código e os construtores da classe previamente, facilitando assim a criação dos objetos. Já no primeiro exercício, o modelo singleton impede a criação de múltiplas instâncias, o que poderia ser uma necessidade do usuário, já o padrão factory foi bem utilizado, pois fazia com que o usuário não tivesse a necessidade de conhecer as estruturas de dados, apenas o que queria que ela fizesse.
